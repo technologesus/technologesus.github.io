@@ -1,0 +1,62 @@
+body {
+	font-family: "Open Sans", Georgia, sans-serif;
+	font-weight: 300;
+	line-height: 2;
+
+}
+
+a {
+	transition: all .3s ease;
+}
+
+/*Section Intro*/
+.section-intro {
+	padding-top: 100px;
+	background-image: url(../images/background/intro-background.png);
+	color: #fff;
+}
+
+@media (max-width: 992px) {
+	.section-intro {
+		padding-bottom: 25px;
+	}
+}
+
+.intro-logo {
+	margin-bottom: 110px;
+}
+
+.intro-headline {
+	font-weight: 400;
+	margin: 0;
+}
+
+@media (max-width: 992px) {
+	.intro-headline {
+		font-size: 30px;
+	}
+}
+
+.intro-text {
+	margin: 40px 0 35px 0;
+}
+
+.intro-btn {
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 12px 18px;
+	margin-right: 10px;
+}
+
+.intro-btn:hover {
+	background: #fff;
+	color: #6dbc89;
+}
+
+.intro-image {
+	background-image: url(../images/intro-image.png);
+	width: 462px;
+	height: 365px;
+}
