@@ -4,7 +4,7 @@ body {
 	line-height: 2;
 }
 
-a, .features-image, .features-heading, .awesome-cheklist i, .awesome-cheklist li {
+a, .features-image, .features-heading, .awesome-cheklist i, .awesome-cheklist li, .block-heading, .cost, .cost-sub, .block-content {
 	transition: all .3s ease;
 }
 
@@ -20,11 +20,33 @@ h1, h2, h3 ,h4 ,h5 {
 	margin: 0;
 }
 
+h2 {
+	font-size: 24px
+}
+
+h4 {
+	font-size: 16px;
+}
+
+.btn {
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #1cbd87;
+	background: #1cbd87;
+	color: #fff;
+	padding: 12px 18px;
+}
 
 .section-headline {
 	font-weight: 400;
 	margin: 0;
 	color: #1cbd87;
+}
+
+@media (max-width: 992px) {
+	.section-headline {
+		font-size: 30px;
+	}
 }
 
 /*Section Intro*/ 
@@ -36,8 +58,8 @@ h1, h2, h3 ,h4 ,h5 {
 }
 
 @media (max-width: 992px) {
-	.section-intro {
-		padding-bottom: 25px;
+	.section-intro, .section-awesome {
+		padding-bottom: 30px;
 	}
 }
 
@@ -49,26 +71,16 @@ h1, h2, h3 ,h4 ,h5 {
 	color: #fff;
 }
 
-@media (max-width: 992px) {
-	.intro-headline {
-		font-size: 30px;
-	}
-}
-
 .intro-text {
 	margin: 40px 0 35px 0;
 }
 
 .intro-btn {
-	font-size: 16px;
-	font-weight: 400;
 	border: 1px solid #fff;
-	color: #fff;
-	padding: 12px 18px;
 	margin-right: 10px;
 }
 
-.intro-btn:hover, .awesome-btn:hover{
+.intro-btn:hover, .awesome-btn:hover, .plan-btn:hover, .signup-btn:hover {
 	background: #fff;
 	color: #1cbd87;
 }
@@ -81,7 +93,7 @@ h1, h2, h3 ,h4 ,h5 {
 
 /*Section Features*/
 .section-features {
-	padding-bottom: 50px;
+	padding-bottom: 45px;
 }
 
 .features-headline {
@@ -104,15 +116,15 @@ h1, h2, h3 ,h4 ,h5 {
 }
 
 .features-text {
-	margin-bottom: 30px;
+		margin-bottom: 30px;
 }
 
 .features-block:hover .features-image {
-	background-color: #6dbc89;
+	background-color: #1cbd87;
 }
 
 .features-block:hover .features-heading {
-	color: #6dbc89;
+	color: #1cbd87;
 }
 
 /*Section Awesome*/
@@ -122,7 +134,7 @@ h1, h2, h3 ,h4 ,h5 {
 }
 
 .awesome-headline {
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 
 .awesome-cheklist {
@@ -146,16 +158,6 @@ h1, h2, h3 ,h4 ,h5 {
 	opacity: 1;
 }
 
-.awesome-btn {
-	font-size: 16px;
-	font-weight: 400;
-	border: 1px solid #1cbd87;
-	background: #1cbd87;
-	color: #fff;
-	padding: 12px 18px;
-	margin-right: 10px;
-}
-
 .awesome-image {
 	background-image: url(../images/awesome-image.png);
 	background-repeat: no-repeat;
@@ -163,3 +165,150 @@ h1, h2, h3 ,h4 ,h5 {
 	height: 358px;
 }
 
+/*Section Testimonials*/
+.section-testimonials {
+	padding-bottom: 200px;
+}
+
+/*Section How*/
+.section-how { 
+	padding-bottom: 50px;
+}
+
+.how-headline {
+	padding-bottom: 20px;
+}
+
+.how-text {
+	padding-bottom: 30px;
+}
+
+.column-text {
+	padding: 10px 0 25px 0;
+}
+
+.how-video {
+	width: 100%;
+}
+
+/*Section Subscribe*/
+.section-subscribe {
+	padding-bottom: 200px;
+	background-image: url(../images/background/subsribe-background.png);
+	height: 270px;
+}
+
+.subscribe-headline {
+	padding-bottom: 30px;
+}
+
+.form-group {
+	border-color: #1cbd87;
+}
+
+/*Section Plan*/
+.plan-block {
+	margin-bottom: 50px;
+}
+
+.plan-headline {
+	padding-bottom: 85px;
+}
+
+.block-heading {
+	padding: 20px 0;
+	background-color: #f6f6f6;
+	border-radius: 10px 10px 0 0;
+}
+
+.heading {
+	padding-bottom: 15px;
+}
+
+.cost {
+	color: #1cbd87;
+	font-size: 46px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.block-content {
+	border: 1px solid #f6f6f6;
+	border-radius: 0 0 10px 10px;
+}
+
+.description {
+	list-style: none;
+	padding: 0;
+}
+
+.description li {
+	border-bottom: 1px solid #f6f6f6;
+	margin: 0 35px 0 35px;
+	padding: 15px 0;
+}
+
+.plan-btn {
+	margin: 30px 0;
+}
+
+.plan-block:hover .block-heading {
+	background-color: #1cbd87;
+}
+
+.plan-block:hover .block-heading, .plan-block:hover .cost, .plan-block:hover .cost-sub {
+	color: #fff;
+}
+
+.plan-block:hover .block-content {
+	border: 1px solid #1cbd87;
+}
+
+/*Section Signup*/
+.section-signup {
+	padding-top: 50px;
+}
+
+.signup-text {
+	padding: 35px 0 25px 0;
+}
+
+.signup-btn {
+	margin-bottom: 100px;
+}
+/*Section Partner*/
+.section-partner {
+	background: #f6f6f6;
+}
+
+/*Section Footer*/
+.section-footer {
+	padding: 0;
+	background-color: #373737;
+	width: 100%;
+}
+
+.footer-text {
+	padding: 0;
+	font-weight: 400;
+	padding: 36px 0;
+}
+
+.footer-btn-group {
+	padding: 0;
+	padding: 36px 0;
+	text-align: right;
+}
+
+.footer-btn {
+	margin-left: 12px;
+	padding: 6px;
+	background-color: #fff;
+	color: #373737;
+	border-radius: 50%;
+}
+
+	.footer-btn:hover {
+		background-color: #1cbd87;
+		color: #373737;
+	}
