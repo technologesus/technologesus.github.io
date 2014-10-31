@@ -1,18 +1,37 @@
 body {
-	font-family: "Open Sans", Georgia, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	line-height: 2;
-
 }
 
-a {
+a, .features-image, .features-heading, .awesome-cheklist i, .awesome-cheklist li {
 	transition: all .3s ease;
 }
 
-/*Section Intro*/
+p {
+	margin: 0;
+}
+
+section {
+	padding-top: 75px;
+}
+
+h1, h2, h3 ,h4 ,h5 {
+	margin: 0;
+}
+
+
+.section-headline {
+	font-weight: 400;
+	margin: 0;
+	color: #1cbd87;
+}
+
+/*Section Intro*/ 
 .section-intro {
 	padding-top: 100px;
 	background-image: url(../images/background/intro-background.png);
+	background-attachment: fixed;
 	color: #fff;
 }
 
@@ -27,8 +46,7 @@ a {
 }
 
 .intro-headline {
-	font-weight: 400;
-	margin: 0;
+	color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -50,9 +68,9 @@ a {
 	margin-right: 10px;
 }
 
-.intro-btn:hover {
+.intro-btn:hover, .awesome-btn:hover{
 	background: #fff;
-	color: #6dbc89;
+	color: #1cbd87;
 }
 
 .intro-image {
@@ -60,3 +78,88 @@ a {
 	width: 462px;
 	height: 365px;
 }
+
+/*Section Features*/
+.section-features {
+	padding-bottom: 50px;
+}
+
+.features-headline {
+	margin-bottom: 80px;
+}
+
+.features-block {
+	cursor: default;
+}
+
+.features-image {
+	padding: 50px;
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.features-heading {
+	padding: 35px 0 20px 0;
+}
+
+.features-text {
+	margin-bottom: 30px;
+}
+
+.features-block:hover .features-image {
+	background-color: #6dbc89;
+}
+
+.features-block:hover .features-heading {
+	color: #6dbc89;
+}
+
+/*Section Awesome*/
+.section-awesome {
+	background-color: #f6f6f6;
+	overflow: hidden!important;
+}
+
+.awesome-headline {
+	padding-bottom: 25px;
+}
+
+.awesome-cheklist {
+	cursor: default;
+	line-height: 2.2;
+	list-style-type: none;
+	font-weight: 400;
+	padding: 20px 0;
+}
+
+.awesome-cheklist .fa-check {
+	color: #1cbd87;
+	white-space: pre;
+}
+
+.awesome-cheklist:hover li, .awesome-cheklist:hover i {
+	opacity: .5;
+}
+
+.awesome-cheklist:hover li:hover, .awesome-cheklist:hover i:hover {
+	opacity: 1;
+}
+
+.awesome-btn {
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #1cbd87;
+	background: #1cbd87;
+	color: #fff;
+	padding: 12px 18px;
+	margin-right: 10px;
+}
+
+.awesome-image {
+	background-image: url(../images/awesome-image.png);
+	background-repeat: no-repeat;
+	width: 560px;
+	height: 358px;
+}
+
