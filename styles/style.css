@@ -105,11 +105,12 @@ h4 {
 }
 
 .features-image {
-	padding: 50px;
+	padding: 55px 50px  ;
 	background-color: #f6f6f6;
 	border-radius: 50%;
 	display: inline-block;
 }
+
 
 .features-heading {
 	padding: 35px 0 20px 0;
