@@ -288,20 +288,14 @@ h4 {
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   
-border-color: #1cbd87;
-box-shadow: 0 1px 1px #1cbd87 inset, 0 0 8px #1cbd87;
-outline: 0 none;
+	border-color: #1cbd87;
+	box-shadow: 0 1px 1px #1cbd87 inset, 0 0 8px #1cbd87;
+	outline: 0 none;
 }
 
 label {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
+	margin: 0;
+	font-weight: 400;
 }
 
 .form-control {
@@ -320,8 +314,12 @@ label {
 	background-color: #1cbd87;
 	border: 1px solid #1cbd87;
 	color: #fff;
-	padding: 0px 20px;
+	padding: 0px 0px;
 	white-space: pre;
+}
+
+.subscribe-btn {
+	padding: 0 25px;
 }
 
 /*Section Plan*/
@@ -399,6 +397,8 @@ label {
 .section-partner {
 	background: #f6f6f6;
 }
+
+/* End carousel */
 
 /*Section Footer*/
 .section-footer {
